@@ -1,0 +1,19 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-06-22T15:45:41.000Z",
+      "fileName": "contentassets/zoom_meeting_manager.asset",
+      "fullName": "zoom_meeting_manager",
+      "id": "03SdM000000aJXBUA2",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-06-22T15:45:41.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "ContentAsset"
+    }
+  ]
+}

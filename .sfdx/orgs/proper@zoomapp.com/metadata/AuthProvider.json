@@ -1,0 +1,17 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-06-20T03:14:48.000Z",
+      "fileName": "authproviders/Zoom_Auth.authprovider",
+      "fullName": "Zoom_Auth",
+      "id": "0SOdM00000050iXWAQ",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+      "type": "AuthProvider"
+    }
+  ]
+}

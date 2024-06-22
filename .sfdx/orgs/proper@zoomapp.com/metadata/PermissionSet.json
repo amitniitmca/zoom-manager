@@ -1,0 +1,47 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-06-22T17:39:11.000Z",
+      "fileName": "permissionsets/Proper_Zoom_Meeting_Manager.permissionset",
+      "fullName": "Proper_Zoom_Meeting_Manager",
+      "id": "0PSdM000003Y8lVWAS",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-06-22T17:41:19.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "PermissionSet"
+    },
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-06-18T16:38:39.000Z",
+      "fileName": "permissionsets/Experience_Profile_Manager.permissionset",
+      "fullName": "Experience_Profile_Manager",
+      "id": "0PSdM000003JYzYWAW",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-06-18T16:38:39.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "PermissionSet"
+    },
+    {
+      "createdById": "005dM000003J6UfQAK",
+      "createdByName": "Automated Process",
+      "createdDate": "2024-06-18T16:38:39.000Z",
+      "fileName": "permissionsets/sfdcInternalInt__sfdc_scrt2.permissionset",
+      "fullName": "sfdcInternalInt__sfdc_scrt2",
+      "id": "0PSdM000003JYyqWAG",
+      "lastModifiedById": "005dM000003J6UfQAK",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2024-06-18T16:42:25.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "sfdcInternalInt",
+      "type": "PermissionSet"
+    }
+  ]
+}
