@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#3FA9F5</headerColor>
+        <logo>zoom_meeting_manager</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>This app is used to manage Zoom meetings in your org.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Proper Zoom Manager</label>
+    <navType>Standard</navType>
+    <tabs>standard-Event</tabs>
+    <tabs>Zoom_Meeting__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Proper_Zoom_Manager_UtilityBar</utilityBar>
+</CustomApplication>
