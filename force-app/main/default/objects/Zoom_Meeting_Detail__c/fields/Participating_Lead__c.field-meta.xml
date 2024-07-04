@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <label>Participating Lead</label>
     <referenceTo>Lead</referenceTo>
-    <relationshipLabel>Past Zoom Meetings Lead</relationshipLabel>
     <relationshipName>Past_Zoom_Meetings_Lead</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>

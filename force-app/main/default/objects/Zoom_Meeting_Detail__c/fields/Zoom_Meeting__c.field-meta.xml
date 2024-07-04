@@ -3,7 +3,6 @@
     <fullName>Zoom_Meeting__c</fullName>
     <label>Zoom Meeting</label>
     <referenceTo>Zoom_Meeting__c</referenceTo>
-    <relationshipLabel>Past Zoom Meetings</relationshipLabel>
     <relationshipName>Past_Zoom_Meetings</relationshipName>
     <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>

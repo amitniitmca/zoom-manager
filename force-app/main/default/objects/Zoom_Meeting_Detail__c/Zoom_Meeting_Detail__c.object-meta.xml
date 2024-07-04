@@ -153,14 +153,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Past Zoom Meeting</label>
+    <label>Zoom Meeting Detail</label>
     <nameField>
-        <displayFormat>PZMC-{000000000}</displayFormat>
-        <label>Past Zoom Meeting Code</label>
+        <displayFormat>ZMDC-{000000000}</displayFormat>
+        <label>Zoom Meeting Details Code</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Past Zoom Meetings</pluralLabel>
+    <pluralLabel>Zoom Meeting Details</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
