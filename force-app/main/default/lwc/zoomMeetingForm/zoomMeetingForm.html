@@ -1,0 +1,117 @@
+<!--
+  @description       : 
+  @author            : Amit Kumar (Proper Salesforce Tutorials)
+  @created on        : 
+  @last modified on  : 05-07-2024
+  @last modified by  : Amit Kumar (Proper Salesforce Tutorials)
+-->
+<template>
+    <lightning-card title="Create Zoom Meeting" icon-name="action:new_event">
+        <template if:false={isLoading}>
+            <div class="slds-var-p-horizontal_small">
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="6" class="slds-var-p-around_xx-small">
+                        <lightning-combobox
+                            name="meetingType"
+                            label="Meeting Type"
+                            value={meetingTypeValue}
+                            options={meetingTypeOptions}
+                            onchange={handleMeetingTypeChange}>
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6" class="slds-var-p-around_xx-small">
+                        <lightning-input 
+                            type="text" 
+                            variant="standard" 
+                            name="agenda" 
+                            label="Agenda"
+                            value={agendaValue}
+                            onchange={handleAgendaChange} 
+                            required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6" class="slds-var-p-around_xx-small">
+                        <lightning-input 
+                            type="text" 
+                            variant="standard" 
+                            name="scheduleFor" 
+                            label="Schedule For"
+                            value={scheduleForValue}
+                            disabled>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6" class="slds-var-p-around_xx-small">
+                        <lightning-input 
+                            type="text" 
+                            variant="standard" 
+                            name="timeZone" 
+                            label="Timezone"
+                            value={timeZoneValue}
+                            disabled>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="2" class="slds-var-p-around_xx-small">
+                        <lightning-input 
+                            type="number" 
+                            variant="standard" 
+                            name="duration" 
+                            label="Duration (in minutes)"
+                            value={durationValue}
+                            onchange={handleDurationChange} 
+                            required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="5" class="slds-var-p-around_xx-small slds-var-m-top_xx-small">
+                        <label>Start Datetime</label>
+                        <lightning-input 
+                            type="datetime-local" 
+                            variant="label-hidden" 
+                            name="startdatetime" 
+                            data-id="startdatetime" 
+                            label="Start"
+                            value={startDateTimeValue}
+                            onchange={handleStartDateTimeChange} 
+                            required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="5" class="slds-var-p-around_xx-small slds-var-m-top_xx-small">
+                        <label>End Datetime</label>
+                        <lightning-input 
+                            type="datetime-local" 
+                            variant="label-hidden" 
+                            name="enddatetime" 
+                            label="End"
+                            value={endDateTimeValue}
+                            disabled>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" class="slds-var-p-around_xx-small">
+                        <c-recurring-meeting-component start-date-time={startDateTimeValue}></c-recurring-meeting-component>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" class="slds-var-p-around_xx-small">
+                        <c-add-invitees></c-add-invitees>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+            <div slot="footer">
+                <lightning-button 
+                    variant="brand" 
+                    label="Create" 
+                    title="Create Meeting" 
+                    onclick={handleCreateClick}
+                    class="slds-var-p-right_xx-small">
+                </lightning-button>
+                <lightning-button 
+                    variant="neutral" 
+                    label="Reset" 
+                    title="Reset" 
+                    onclick={handleResetClick}
+                    class="slds-var-p-left_xx-small">
+                </lightning-button>
+            </div>
+        </template>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

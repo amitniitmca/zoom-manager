@@ -1,0 +1,49 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="4" class="slds-var-p-around_xxx-small">
+            <template if:true={userRecords}>
+                <c-proper-lookup
+                    data-id="userLookup"
+                    object-records={userRecords}
+                    search-field-name="Name"
+                    search-label="User"
+                    search-variant="standard"
+                    onselected={handleAssignedUser}>
+                </c-proper-lookup>
+            </template>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-var-p-around_xxx-small">
+            <template if:true={contactRecords}>
+                <c-proper-lookup
+                    data-id="contactLookup"
+                    object-records={contactRecords}
+                    search-field-name="Name"
+                    search-label="Contact"
+                    search-variant="standard"
+                    onselected={handleAssignedContact}>
+                </c-proper-lookup>
+            </template>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-var-p-around_xxx-small">
+            <template if:true={leadRecords}>
+                <c-proper-lookup
+                    data-id="leadLookup"
+                    object-records={leadRecords}
+                    search-field-name="Name"
+                    search-label="Lead"
+                    search-variant="standard"
+                    onselected={handleAssignedLead}>
+                </c-proper-lookup>
+            </template>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="slds-var-p-around_xxx-small">
+            <template if:true={selectedRecords} for:each={selectedRecords} for:item="selRec" for:index="index">
+               <lightning-badge 
+                    key={selRec.recordId}
+                    label={selRec.badgeLabel}
+                    icon-name={selRec.badgeIcon}>
+                </lightning-badge>
+            </template>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

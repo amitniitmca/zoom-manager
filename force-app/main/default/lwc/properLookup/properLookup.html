@@ -1,0 +1,38 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+            <lightning-input
+                class={inputClass}
+                type="search"
+                value={searchTerm}
+                variant={searchVariant}
+                autocomplete="off"
+                name="searchBox"
+                label={searchLabel}
+                onchange={handleSearchChange}
+                onclick={handleSearchClick}
+                onblur={handleSearchFocusOut}>
+            </lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+            <template if:true={records}>
+                <!-- <div class="slds-scrollable_y" style="height:15rem;width:25rem"> -->
+                    <template for:each={records} for:item="record">
+                        <div
+                            key={record.Id}
+                            role="presentation"
+                            data-name={record.Name}
+                            onclick={onSearchTermSelect}
+                            class="para">
+                            <p class="slds-lookup__item-action slds-lookup__item-action--label" role="option">
+                                <span class="slds-truncate"> <b> {record.Name} </b></span>
+                                <template if:true={record.field_1}>,&nbsp;<span class="slds-truncate"> {record.field_1}</span></template> 
+                                <template if:true={record.field_2}>,&nbsp;<span class="slds-truncate"> [{record.field_2}]</span></template>
+                            </p>
+                        </div>
+                    </template>
+                <!-- </div> -->
+            </template>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

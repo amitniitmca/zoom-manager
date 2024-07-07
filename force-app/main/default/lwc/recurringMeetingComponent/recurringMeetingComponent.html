@@ -1,0 +1,193 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+            <lightning-input 
+              type="checkbox"
+              label="Recurring Meeting"
+              name="recurringCheckbox"
+              checked={recurringCheckboxValue}
+              onchange={handleRecurringMeetingChange}
+            ></lightning-input>
+            {recurringMessage}
+        </lightning-layout-item>
+        <template if:true={recurringCheckboxValue}>
+            <lightning-layout-item size="6" class="slds-var-p-around_x-small">
+                <lightning-combobox
+                    name="recurrence"
+                    label="Recurrence"
+                    value={recurrenceValue}
+                    options={recurrenceOptions}
+                    onchange={handleRecurrenceChange}>
+                </lightning-combobox>
+            </lightning-layout-item>
+            <template if:true={isDailySelected}>
+                <lightning-layout-item size="6" class="slds-var-p-around_x-small">
+                    <lightning-combobox
+                        name="repeatEveryInDays"
+                        data-id="repeatEveryInDays"
+                        label="Repeat Every (days)"
+                        value={repeatEveryDayValue}
+                        options={repeatEveryDayOptions}
+                        onchange={handleRepeatEveryDayChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </template>
+            <template if:true={isWeeklySelected}>
+                <lightning-layout-item size="6" class="slds-var-p-around_x-small">
+                    <lightning-combobox
+                        name="repeatEveryInWeeks"
+                        data-id="repeatEveryInWeeks"
+                        label="Repeat Every (weeks)"
+                        value={repeatEveryWeekValue}
+                        options={repeatEveryWeekOptions}
+                        onchange={handleRepeatEveryWeekChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </template>
+            <template if:true={isMonthlySelected}>
+                <lightning-layout-item size="6" class="slds-var-p-around_x-small">
+                    <lightning-combobox
+                        name="repeatEveryInMonths"
+                        data-id="repeatEveryInMonths"
+                        label="Repeat Every (months)"
+                        value={repeatEveryMonthValue}
+                        options={repeatEveryMonthOptions}
+                        onchange={handleRepeatEveryMonthChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </template>
+            <template if:true={isWeeklySelected}>
+                <lightning-layout-item size="12" class="slds-var-p-around_small slds-var-m-left_small">
+                    <table>
+                        <tr>
+                            <template if:true={occursOnWeekOptions} for:each={occursOnWeekOptions} for:item="weekOptions">
+                                <th key={weekOptions.id}>
+                                    <lightning-input 
+                                        type="checkbox" 
+                                        variant="standard"
+                                        label={weekOptions.name}
+                                        data-id={weekOptions.id}
+                                        checked={weekOptions.isDefault}
+                                        disabled={weekOptions.isDefault}
+                                        onchange={handleWeekOptionsChecked}>
+                                    </lightning-input>
+                                </th>
+                            </template>
+                        </tr>
+                    </table>
+                </lightning-layout-item>
+            </template>
+            <template if:true={isMonthlySelected}>
+                <lightning-layout-item size="12" class="slds-var-p-around_x-small">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="12">
+                            <p><b>Occurs On</b></p>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="3" class="slds-var-p-around_x-small">
+                            <lightning-input 
+                                type="toggle" 
+                                label="Date" 
+                                name="occursDateToggle"
+                                variant="label-inline"
+                                checked={occursDateToggleChecked}
+                                onchange={handleOccursDateToggle}>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="3" class="slds-var-p-right_x-small">
+                            <lightning-combobox
+                                label="Date"
+                                variant="label-hidden"
+                                value={occursDateToggleValue}
+                                options={occursDateToggleOptions}
+                                onchange={handleOccursDateToggleChange}
+                                disabled={occursDayToggleChecked}>
+                            </lightning-combobox>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="3">
+                            <lightning-input 
+                                type="toggle" 
+                                label="Day" 
+                                name="occursDayToggle"
+                                variant="label-inline"
+                                checked={occursDayToggleChecked}
+                                onchange={handleOccursDayToggle}>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="3">
+                            <lightning-layout multiple-rows>
+                                <lightning-layout-item size="6">
+                                    <lightning-combobox
+                                        label="Date"
+                                        variant="label-hidden"
+                                        value={occursDateChoiceValue}
+                                        options={occursDateChoiceOptions}
+                                        onchange={handleDateChoiceOptionsChange}
+                                        disabled={occursDateToggleChecked}>
+                                    </lightning-combobox>            
+                                </lightning-layout-item>
+                                <lightning-layout-item size="6">
+                                    <lightning-combobox
+                                        label="Week"
+                                        variant="label-hidden"
+                                        value={occursWeekChoiceValue}
+                                        options={occursWeekChoiceOptions}
+                                        onchange={handleWeekChoiceOptionsChange}
+                                        disabled={occursDateToggleChecked}>
+                                    </lightning-combobox>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-layout-item>
+            </template>
+            <lightning-layout-item size="12" class="slds-var-p-around_x-small">
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="12">
+                        <p><b>End By</b></p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="3">
+                        <lightning-input 
+                            type="toggle" 
+                            label="Date" 
+                            name="endDateToggle"
+                            variant="label-inline"
+                            checked={endDateToggleChecked}
+                            onchange={handleEndDateToggle}>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="3" class="slds-var-p-right_x-small">
+                        <lightning-input 
+                            type="date"  
+                            name="endDate" 
+                            label="End Date"
+                            variant="label-hidden"
+                            value={endDateToggleValue}
+                            disabled={occurrenceToggleChecked}
+                            onchange={handleEndDateToggleChange}>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="3">
+                        <lightning-input 
+                            type="toggle" 
+                            label="Events" 
+                            name="afterOccToggle"
+                            variant="label-inline"
+                            checked={occurrenceToggleChecked}
+                            onchange={handleOccurrenceToggle}>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="3">
+                        <lightning-combobox
+                            name="afterOccPicklist"
+                            value={afterOccPicklistValue}
+                            options={afterOccPicklistOptions}
+                            onchange={handleAfterOccPicklistChange}
+                            disabled={endDateToggleChecked}
+                            variant="label-hidden">
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+        </template>
+    </lightning-layout>
+</template>
