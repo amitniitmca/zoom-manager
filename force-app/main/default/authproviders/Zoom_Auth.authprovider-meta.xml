@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
     <authorizeUrl>https://zoom.us/oauth/authorize</authorizeUrl>
-    <consumerKey>KudtjGXQQnmlbr5NhvX8vg</consumerKey>
+    <consumerKey>p7vvc7rAQuGlBq4_rK_xEg</consumerKey>
     <consumerSecret>Placeholder_Value</consumerSecret>
     <friendlyName>Zoom Auth</friendlyName>
     <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
