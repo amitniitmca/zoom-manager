@@ -1,0 +1,19 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-07-06T16:59:24.000Z",
+      "fileName": "letterhead/Proper_Zoom_Letterhead.letter",
+      "fullName": "Proper_Zoom_Letterhead",
+      "id": "016dM000000m2qjQAA",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-07-06T17:17:38.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "Letterhead"
+    }
+  ]
+}

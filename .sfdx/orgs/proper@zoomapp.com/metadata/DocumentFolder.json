@@ -1,0 +1,19 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-07-06T17:07:00.000Z",
+      "fileName": "documents/Proper_Zoom_Resource_Folder",
+      "fullName": "Proper_Zoom_Resource_Folder",
+      "id": "00ldM000003oBQrQAM",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-07-06T17:07:00.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "DocumentFolder"
+    }
+  ]
+}

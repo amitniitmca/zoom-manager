@@ -1,0 +1,33 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-06-18T16:38:39.000Z",
+      "fileName": "remoteSiteSettings/ApexDevNet.remoteSite",
+      "fullName": "ApexDevNet",
+      "id": "0rpdM000000msqvQAA",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-06-18T16:38:39.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-07-06T14:11:53.000Z",
+      "fileName": "remoteSiteSettings/IP_Geolocation_URL.remoteSite",
+      "fullName": "IP_Geolocation_URL",
+      "id": "0rpdM0000012OfBQAU",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-07-06T14:12:00.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "RemoteSiteSetting"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-07-06T18:12:41.000Z",
+      "fileName": "email/pzm__Proper_Zoom_Folder/Proper_Notification_of_Zoom_Meeting_Invite.email",
+      "fullName": "pzm__Proper_Zoom_Folder/Proper_Notification_of_Zoom_Meeting_Invite",
+      "id": "00XdM000003tyHxUAI",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-07-06T18:45:36.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "EmailTemplate"
+    }
+  ]
+}

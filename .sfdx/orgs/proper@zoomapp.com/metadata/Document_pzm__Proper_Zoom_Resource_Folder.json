@@ -1,0 +1,33 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-07-06T17:08:36.000Z",
+      "fileName": "documents/pzm__Proper_Zoom_Resource_Folder/header_logo_jpg.jpg",
+      "fullName": "pzm__Proper_Zoom_Resource_Folder/header_logo_jpg.jpg",
+      "id": "015dM0000014CBhQAM",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-07-06T17:16:21.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "Document"
+    },
+    {
+      "createdById": "005dM000003J6UdQAK",
+      "createdByName": "Amit Kumar",
+      "createdDate": "2024-07-06T17:14:06.000Z",
+      "fileName": "documents/pzm__Proper_Zoom_Resource_Folder/footer_logo_jpg.jpg",
+      "fullName": "pzm__Proper_Zoom_Resource_Folder/footer_logo_jpg.jpg",
+      "id": "015dM0000014CQDQA2",
+      "lastModifiedById": "005dM000003J6UdQAK",
+      "lastModifiedByName": "Amit Kumar",
+      "lastModifiedDate": "2024-07-06T17:14:06.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "pzm",
+      "type": "Document"
+    }
+  ]
+}
