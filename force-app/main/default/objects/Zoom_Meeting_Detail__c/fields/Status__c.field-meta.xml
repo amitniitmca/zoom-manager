@@ -20,6 +20,16 @@
                 <default>false</default>
                 <label>Missed</label>
             </value>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
