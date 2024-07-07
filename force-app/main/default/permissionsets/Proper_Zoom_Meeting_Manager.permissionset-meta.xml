@@ -4,6 +4,41 @@
         <application>Proper_Zoom_Manager</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Zoom_Meeting__c.Join_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Zoom_Meeting__c.Meeting_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Zoom_Meeting__c.Meeting_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Zoom_Meeting__c.Schedule_For__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Zoom_Meeting__c.Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Zoom_Meeting__c.Start_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Zoom_Meeting__c.Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Proper Zoom Meeting Manager</label>
     <objectPermissions>
