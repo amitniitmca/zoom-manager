@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>ZoomMeeingUrls</members>
+        <members>CreateMeetingRequestWrapper</members>
+        <members>ZoomMeetingRequest</members>
+        <members>ZoomMeetingServices</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -14,10 +16,28 @@
     </types>
     <types>
         <members>pzm__Zoom_Meeting__c</members>
+        <members>pzm__Past_Zoom_Meeting__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>pzm__Zoom_Meeting__c.pzm__Agenda__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Duration_in_Minutes__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Invitees_Information__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Join_URL__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Meeting_Id__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Meeting_Type__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Schedule_For__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Start_Time__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Start_URL__c</members>
+        <members>pzm__Zoom_Meeting__c.pzm__Timezone__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Duration_in_Minutes__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Join_Time__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Leave_Time__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Participating_Contact__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Participating_Lead__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Participating_User__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Status__c</members>
+        <members>pzm__Past_Zoom_Meeting__c.pzm__Zoom_Meeting__c</members>
         <name>CustomField</name>
     </types>
     <types>

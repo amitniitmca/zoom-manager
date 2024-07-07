@@ -1,10 +1,10 @@
 # Zoom Manager
 
 ## Zoom API APP Information
-- Client ID: KudtjGXQQnmlbr5NhvX8vg
-- Client Secret: fgUOLHKOVsTibWWsjjmRJYn8vR63O4t9
-- Secret Token: XgJYEJVbSC6lBysJMC9oeQ
-- Verification Token: RzP7DXy1RzaPkFymCQ52Cw (Retires in August 2024)
+- Client ID: p7vvc7rAQuGlBq4_rK_xEg
+- Client Secret: gHRLjafXkXE65MVEJZ84t2mWe2uKW36J
+- Secret Token: CCB58E6DTveIkUquVYGjhQ
+- Verification Token: 96rl6VUDT7GYxeOMj8h2lQ (Retires in August 2024)
 - Scopes:
     meeting:update:meeting meeting:delete:meeting meeting:write:invite_links meeting:write:meeting meeting:read:list_upcoming_meetings meeting:read:participant meeting:read:meeting meeting:read:chat_message meeting:read:invitation
 - Authorization URL: https://zoom.us/oauth/authorize?response_type=code&client_id=vFRcsT3jSU2QsmFupBbPkA&redirect_uri=https://properservices-dev-ed.develop.my.salesforce.com/services/authcallback/Zoom_Auth
@@ -27,3 +27,15 @@
 
 
 DEV ED Org - proper@zoomapp.com (amit1to4)
+
+meeting.chat_message_file_sent
+meeting.chat_message_sent
+meeting.deleted
+meeting.updated
+
+
+===========
+BLOCKERS
+===========
+=> Clicking on Recurring Meeting showing error.
+=> https://app.ipgeolocation.io/
